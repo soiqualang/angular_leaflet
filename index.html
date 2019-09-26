@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ionic Leaflet Map Example</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html ng-app="ionic.example">
+
+<head>
+  <meta charset="utf-8">
+  <title>Leaflet Map Example</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+
+<body ng-controller="MapCtrl">
+  <ion-header-bar class="bar-energized">
+    <h1 class="title">Leaflet Map Example </h1>
+  </ion-header-bar>
+  <ion-content>
+    <div id="map" data-tap-disabled="true"></div>
+  </ion-content>
+  <ion-footer-bar class="bar-energized">
+    <a ng-click="centerOnMe()" class="button button-icon icon ion-location">&nbsp;&nbsp;Where am I?</a>
+  </ion-footer-bar>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
