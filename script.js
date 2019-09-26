@@ -9,13 +9,14 @@ angular.module('ionic.example', ['ionic'])
   }).addTo(map);
 
   $scope.map = map;
+  $scope.loading = $ionicLoading;
 
   $scope.centerOnMe = function() {
     if (!$scope.map) {
       return;
     }
 
-    $scope.loading = $ionicLoading.show({
+    $scope.loading.show({
       content: 'Getting current location...',
       showBackdrop: false
     });
